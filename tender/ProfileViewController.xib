@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController">
+            <connections>
+                <outlet property="imageView" destination="eiK-ty-7pg" id="Swn-xZ-ffc"/>
+                <outlet property="navBar" destination="3J7-7Y-22P" id="1LN-lc-xnf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-7Y-22P">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="6gv-l9-e6k"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-ty-7pg">
+                    <rect key="frame" x="0.0" y="76" width="320" height="420"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="420" id="4jH-ey-aG3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eiK-ty-7pg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0jj-kT-spo"/>
+                <constraint firstItem="3J7-7Y-22P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Pz-4D-daa"/>
+                <constraint firstItem="eiK-ty-7pg" firstAttribute="top" secondItem="3J7-7Y-22P" secondAttribute="bottom" id="Vyh-ng-OaS"/>
+                <constraint firstItem="3J7-7Y-22P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z6y-lr-Bwb"/>
+                <constraint firstAttribute="trailing" secondItem="3J7-7Y-22P" secondAttribute="trailing" id="ZA8-55-dp4"/>
+                <constraint firstAttribute="trailing" secondItem="eiK-ty-7pg" secondAttribute="trailing" id="kyb-Oe-lVp"/>
+            </constraints>
+            <point key="canvasLocation" x="413" y="392"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_bar2" width="320" height="65"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

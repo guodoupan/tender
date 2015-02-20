@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DraggableImageView.h
 //  tender
 //
 //  Created by Doupan Guo on 2/19/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DraggableImageView : UIImageView
 
+- (void)setup;
 
 @end
-
